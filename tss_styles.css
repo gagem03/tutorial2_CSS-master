@@ -60,6 +60,18 @@ article.syllabus h2{
   color: rgb(101, 101, 101);
 }
 
+article.syllabus ol{
+  list-style-type: upper-roman;
+}
+
+article.syllabus ol ol {
+  list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol ol {
+  list-style-type: decimal;
+}
+
 /* Aside and Blockquote Styles */
 
 aside{
@@ -68,7 +80,24 @@ aside{
 
 /* Navigation Styles */
 
+nav{
+  font-size: 0.8em;
+}
+
+nav > ul{
+  list-style-type: none;
+  line-height: 2em;
+}
+
+nav a{
+  text-decoration: none;
+}
+
 /* List Styles */
+
+article#about_tss ul{
+  list-style-image: url(runicon.png);
+}
 
 /* Footer Styles */
 
