@@ -103,10 +103,24 @@ nav a{
   text-decoration: none;
 }
 
+nav > ul > li > a:hover, nav > ul > li > a:active{
+  color: rgb(255, 64, 255);
+  text-decoration: underline;
+}
+
 /* List Styles */
 
 article#about_tss ul{
   list-style-image: url(runicon.png);
+}
+
+/* Using Structural Pseudo-Class */
+article#about_tss ul li:nth-of-type(2){
+  list-style-image: url(bikeicon.png);
+}
+
+article#about_tss ul li:last-of-type{
+  list-style-image: url(swimicon.png);
 }
 
 /* Footer Styles */
