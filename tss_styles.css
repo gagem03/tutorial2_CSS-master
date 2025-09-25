@@ -83,6 +83,20 @@ aside blockquote{
   margin: 20px 5px;
 }
 
+aside blockquote::before{
+  content: open-quote;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+aside blockquote::after{
+  content: close-quote;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
 /* Navigation Styles */
 
 nav{
@@ -100,6 +114,11 @@ nav > ul > li.newgroup{
 }
 
 nav a{
+  text-decoration: none;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited{
+  color: rgb(151, 151, 151);
   text-decoration: none;
 }
 
@@ -124,6 +143,13 @@ article#about_tss ul li:last-of-type{
 }
 
 /* Footer Styles */
+
+footer{
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+  padding: 20px;
+}
 
 /*
 Notice for the Quicksand-Regular Font
